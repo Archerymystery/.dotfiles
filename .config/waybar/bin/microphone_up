@@ -1,0 +1,8 @@
+#!/bin/bash
+
+volume=$(pactl get-source-volume @DEFAULT_SOURCE@ pactl get-source-volume @DEFAULT_SOURCE@ | grep -o -P "\b(?:1000|\d{1,2})\b(?=%)" | head -n 1)
+number=$(expr "$volume" )
+
+if  (($number<100)) ; then
+   pactl set-source-volume @DEFAULT_SOURCE@ +5% 
+fi

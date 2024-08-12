@@ -1,0 +1,124 @@
+* {
+  border: none;
+  font-weight: bold;
+  font-size: 13px;
+  min-height: 0;
+}
+
+window#waybar {
+  background: none;
+}
+
+#workspaces button.active {
+  color: #f5a97f;
+}
+
+#workspaces button {
+  color: #9c9c9c;
+  margin-right: 5px;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+#workspaces button.focused {
+  color: #a6adc8;
+  background: #eba0ac;
+  border-radius: 7px;
+}
+
+#workspaces button.urgent {
+  color: #11111b;
+  background: #a6e3a1;
+  border-radius: 7px;
+}
+
+#workspaces button:hover {
+  background: #11111b;
+  color: #cdd6f4;
+  border-radius: 7px;
+}
+
+
+#clock,
+#battery,
+#bluetooth,
+#network,
+#workspaces,
+#pulseaudio,
+#language,
+#custom-powermenu {
+  background: #000000;
+  opacity: 1.0;
+  padding: 2px 7px 2px 7px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 7px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+#pulseaudio {
+  color: #89b4fa;
+  margin-right: 0px;
+  border-radius: 7px 0px 0px 7px;
+
+}
+
+#pulseaudio.microphone {
+  margin-left: 0px;
+  border-radius: 0px 7px 7px 0px;
+}
+
+#bluetooth {
+  color: #89b4fa;
+}
+
+#network {
+  color: #a6e3a1;
+}
+
+#clock {
+  color: #f9e2af;
+}
+
+#battery {
+  color: #a6e3a1;
+}
+
+#battery.critical:not(.charging) {
+  background-color: #F53C3C;
+  color: #EEEEEE;
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+#pulseaudio.microphone {
+  color: #cba6f7;
+}
+
+#custom-powermenu {
+  font-size: 20px;
+  color: #F53C3C;
+
+}
+
+#input>.left {
+  font-size: 0;
+  margin-right: 0;
+  padding: 0;
+  outline-width: 0;
+  -gtk-dpi: 0;
+  background: transparent;
+  outline-color: transparent;
+  border-color: transparent;
+  color: transparent;
+  box-shadow: none;
+
+}
+
+#input {
+  padding-left: 0;
+}

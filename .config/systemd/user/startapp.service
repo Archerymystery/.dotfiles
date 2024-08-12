@@ -1,0 +1,9 @@
+[Unit]
+Description=Autostart launch hyperland
+
+[Service]
+ExecStart=/home/Archer/.dotfiles/script/start
+
+[Install]
+WantedBy=default.target
+

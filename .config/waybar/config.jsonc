@@ -1,0 +1,99 @@
+{
+  "layer": "top",
+  "output": "*",
+  "position": "top",
+  "height": 30,
+  "modules-left": [
+    "hyprland/workspaces",
+    "bluetooth",
+    "network"
+  ],
+  "modules-center": [
+    "clock"
+  ],
+  "modules-right": [
+    "pulseaudio",
+    "pulseaudio#microphone",
+    "hyprland/language",
+    "battery",
+    "custom/powermenu"
+  ],
+  "pulseaudio": {
+    "format": "{icon}  {volume}%",
+    "format-bluetooth": "{icon} {volume}% ",
+    "format-muted": "",
+    "format-icons": {
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": [
+        "",
+        ""
+      ]
+    },
+    "scroll-step": 1,
+    "on-click": "pavucontrol",
+    "on-scroll-up": "amixer set Master 5%+",
+    "on-scroll-down": "amixer set Master 5%-"
+  },
+  "bluetooth": {
+    "format": " {status}",
+    "format-disabled": "", // an empty format will hide the module
+    "format-connected": " {device_alias}",
+    "tooltip-format": "{controller_alias}\t{controller_address}",
+    "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
+    "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+    "on-click": "blueberry"
+  },
+  "network": {
+    "format-disconnected": "Disconnected",
+    "format-wifi": "  {essid}",
+    "on-click": "wofi-wifi-menu"
+  },
+  "hyprland/workspaces": {
+    "format": "{icon}",
+  },
+  "pulseaudio#microphone": {
+    "format": "{format_source}",
+    "format-source": " {volume}%",
+    "format-source-muted": " Muted",
+    "on-click": "pactl set-source-mute @DEFAULT_SOURCE@ toggle",
+    "on-scroll-up": "~/.config/waybar/bin/microphone_up",
+    "on-scroll-down": "pactl set-source-volume @DEFAULT_SOURCE@ -5%"
+  },
+  "battery": {
+    "bat": "BAT1",
+    "interval": 60,
+    "states": {
+      "warning": 30,
+      "critical": 10
+    },
+    "format": "{icon}  {capacity}%",
+    "format-charging": "  {capacity}%",
+    "format-plugged": "  {capacity}%",
+    "format-icons": [
+      "  ",
+      "  ",
+      "  ",
+      "  ",
+      "  "
+    ],
+    "max-length": 25
+  },
+  "clock": {
+    "interval": 60,
+    "format": "  {:%A, %B %d [%H:%M]}",
+  },
+  "hyprland/language": {
+    "format": "{}",
+    "format-en": "EN",
+    "format-uk": "UA"
+  },
+  "custom/powermenu": {
+    "format": "󰐥",
+    "on-click": "wofi-powermenu"
+  }
+}

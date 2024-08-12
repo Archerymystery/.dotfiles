@@ -1,0 +1,20 @@
+#!/bin/bash
+
+entries="󰍹 Capture screen\n󰩬 Capture area\n  Capture active window\n󱑀  Take in 5s\n󱑇  Take in 10s"
+
+selected=$(echo -e $entries|wofi --width 350 --height 240 --dmenu --cache-file /dev/null --location 0 )
+echo $selected
+case $selected in
+  "󰍹 Capture screen")
+    exec grimblast copysave screen;;
+  "󰩬 Capture area")
+    exec grimblast copysave area;;
+  " Capture active window")
+    exec grimblast copysave active;;
+  "󱑀 Take in 5s")
+    sleep 5
+    exec grimblast copysave screen;;
+  "󱑇 Take in 10s")
+    sleep 10
+    exec grimblast copysave screen;;
+esac
