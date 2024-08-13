@@ -94,6 +94,6 @@
   },
   "custom/powermenu": {
     "format": "󰐥",
-    "on-click": "wofi-powermenu"
+    "on-click": "fish -c wofi-powermenu"
   }
 }
