@@ -1,5 +1,6 @@
 chmod +x start
 pacman -S --needed git base-devel wofi waybar hyprland kitty firefox yazi mako imv mpv zathura hyprlock bottom telegram-desktop discord thefuck
+stow .
 cd ~
 git clone https://aur.archlinux.org/yay.git
 cd yay
