@@ -22,6 +22,7 @@ Feel free to copy any part of the dotfiles as most of them are copied from other
 - Lockscreen: [hyprlock](https://github.com/hyprwm/hyprlock)
 - Wallpaper Utility: [hyprpaper](https://github.com/hyprwm/hyprpaper)
 - System Monitor: [bottom](https://github.com/ClementTsang/bottom)
+- Code Redactor: [neovim](https://github.com/neovim/neovim)
 
 ## Installation
 
