@@ -1,4 +1,4 @@
-<h1 align="center">Archermystery/.dotfiles</h1>
+<h1 align="center">Archerymystery/.dotfiles</h1>
 
 <img src="/.github/1.png" />
 
