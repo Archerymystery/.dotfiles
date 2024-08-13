@@ -131,7 +131,9 @@
             "enabled": true
         },
         "CtrlEnterSend": {
-            "enabled": true
+            "enabled": true,
+            "submitRule": "ctrl+enter",
+            "sendMessageInTheMiddleOfACodeBlock": true
         },
         "CustomRPC": {
             "enabled": false
@@ -574,6 +576,14 @@
         },
         "SupportHelper": {
             "enabled": true
+        },
+        "MessageColors": {
+            "enabled": true,
+            "renderType": 0,
+            "blockView": 0
+        },
+        "PreMiD": {
+            "enabled": true
         }
     },
     "notifications": {
@@ -586,6 +596,6 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1723499373580
+        "settingsSyncVersion": 1723589572099
     }
 }
