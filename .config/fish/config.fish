@@ -1,4 +1,5 @@
 if status is-interactive
+   thefuck --alias | source 
    starship init fish | source
    neofetch --kitty /home/Archer/.config/neofetch/avatar.png
 end
