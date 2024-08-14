@@ -13,7 +13,7 @@ Feel free to copy any part of the dotfiles as most of them are copied from other
 - Status Bar: [Waybar](https://github.com/Alexays/Waybar)
 - Terminal: [kitty](https://github.com/kovidgoyal/kitty)
 - Launcher: [wofi](https://hg.sr.ht/~scoopta/wofi)
-- Browser: [Firefox]([https://github.com/yokoffing/BetterFox](https://www.mozilla.org/uk/firefox/))
+- Browser: [Firefox](https://www.mozilla.org/uk/firefox/)
 - File Manager: [yazi](https://github.com/sxyazi/yazi)
 - Notifications: [mako](https://github.com/emersion/mako)
 - Image Viewer: [imv](https://sr.ht/~exec64/imv/)
