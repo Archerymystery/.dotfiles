@@ -3,6 +3,7 @@ pacman -S --needed git base-devel wofi waybar hyprland kitty firefox yazi mako i
 stow .
 cd ~
 git clone https://aur.archlinux.org/yay.git
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 cd yay
 makepkg -si
 cd .. 
