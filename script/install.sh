@@ -1,6 +1,6 @@
 cd ~/.dotfiles
-chmod +x start
-pacman -S --needed git base-devel wofi waybar hyprland kitty firefox yazi mako imv mpv zathura hyprlock bottom telegram-desktop nodejs discord nvim pnpm thefuck
+chmod +x script/start
+sudo pacman -S git base-devel wofi waybar hyprland kitty firefox yazi mako imv mpv zathura hyprlock bottom telegram-desktop nodejs discord neovim pnpm thefuck neofetch starship hyprlock hyprpaper pulseaudio bat pavucontrol pulseaudio-alsa pulseaudio-bluetooth less blueberry
 stow .
 cd ~
 git clone https://aur.archlinux.org/yay.git
@@ -31,4 +31,4 @@ git clone https://github.com/henmalib/vc-messageColors.git
 git clone https://github.com/nyakowint/vc-premid.git
 cd ../..
 pnpm i
-pnpm build && pnpm inject
+pnpm build && sudo pnpm inject
