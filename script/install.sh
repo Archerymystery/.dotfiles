@@ -9,7 +9,7 @@ cd yay
 makepkg -si
 cd .. 
 rm -rf yay
-yay -S wofi-calc wofi-wifi-menu-git 
+yay -S wofi-calc wofi-wifi-menu-git grimblast-git 
 systemctl --user start startapp.service
 
 

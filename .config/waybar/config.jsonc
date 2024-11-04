@@ -9,7 +9,7 @@
     "network"
   ],
   "modules-center": [
-    "clock"
+    "custom/clock"
   ],
   "modules-right": [
     "pulseaudio",
@@ -83,9 +83,9 @@
     ],
     "max-length": 25
   },
-  "clock": {
+  "custom/clock": {
     "interval": 60,
-    "format": "  {:%A, %B %d [%H:%M]}",
+    "exec": "date  +'  %A, %B %d [%H:%M]'",
   },
   "hyprland/language": {
     "format": "{}",
