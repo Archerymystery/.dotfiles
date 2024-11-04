@@ -1,6 +1,6 @@
 cd ~/.dotfiles
 chmod +x script/start
-sudo pacman -S git base-devel wofi waybar hyprland kitty firefox yazi mako imv mpv zathura hyprlock bottom telegram-desktop nodejs discord neovim pnpm thefuck neofetch starship hyprlock hyprpaper pulseaudio bat pavucontrol pulseaudio-alsa pulseaudio-bluetooth less blueberry
+sudo pacman -S git base-devel wofi waybar hyprland kitty firefox yazi mako imv mpv zathura hyprlock bottom telegram-desktop nodejs discord neovim pnpm thefuck neofetch starship hyprlock hyprpaper pulseaudio bat pavucontrol pulseaudio-alsa pulseaudio-bluetooth less blueberry tesseract-data-ukr tesseract-data-eng  
 stow .
 cd ~
 git clone https://aur.archlinux.org/yay.git
