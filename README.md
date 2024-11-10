@@ -51,4 +51,4 @@ bash install.sh
                      |     /        |     /     ~-.     `-. _  _  _
                      |_____|        |_____|         ~ - . _ _ _ _ _>
 ```
-[Docs](https://youtu.be/RODxQz0JFVw)
+[Docs](https://youtu.be/mcYLzu_1cNc)
